@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jwapps.krisclients"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/massage"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.jwapps.krisclients.KrisClientsActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CheckIn"
+            android:windowSoftInputMode="stateHidden|adjustResize" 
+            android:label="@string/title_activity_checkIn"></activity>
+        <activity android:name=".ClientInfo"
+            android:label="@string/title_activity_clientInfo"></activity>
+        <activity android:name=".ViewClients"
+            android:label="@string/title_activity_viewClients"></activity>
+        <activity android:name=".ViewMassages"
+            android:label="@string/title_activity_viewMassages"></activity>
+        <activity android:name=".EditEntry"></activity>
+    </application>
+
+</manifest>

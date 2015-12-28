@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/editClient"
+        android:title="Edit Client Information"/>
+
+    <item
+    android:id="@+id/home"
+        android:title="Return to Menu"/>
+        
+</menu>
